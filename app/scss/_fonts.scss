@@ -1,0 +1,4 @@
+@import "_mixins/font-face";
+
+@include font-face("hkgrotesk", "../fonts/HKGroteskRegular/hkgrotesk-regularlegacy");
+@include font-face("hkgrotesk", "../fonts/HKGroteskBold/hkgrotesk-bold", bold);
