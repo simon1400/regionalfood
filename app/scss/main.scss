@@ -97,7 +97,7 @@ header{
 
 
 .slider_info{
-	padding: 0 130px;
+	padding: 100px 130px;
 	&.green{
 		background-color: $green;
 	}
@@ -159,7 +159,21 @@ p{
 
 
 .banner{
-	min-height: 576px;
+	.banner_wrap_container{
+		position: relative;
+		min-height: 575px;
+		width: 100%;
+		.uk-cover-container{
+			height: 575px;
+		}
+		.banner_wrap{
+			background-color: rgba(0,0,0, .4);
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+		}
+	}
 	.banner_info{
 		color: white;
 		text-align: center;
@@ -168,9 +182,6 @@ p{
 			text-align: left;
 			color: white;
 		}
-	}
-	.banner_wrap{
-		background-color: rgba(0,0,0, .4);
 	}
 	.button{
 		margin-top: 50px;
@@ -399,6 +410,24 @@ footer{
 			border: none;
 			margin-left: 10px;
 		}
+	}
+}
+
+.hamburger{
+	&:active, &:focus{
+		outline: none;
+		background-color: none;
+	}
+}
+
+.header_mobile{
+	display: flex;
+	justify-content: space-between;
+}
+
+.button_menu{
+	img{
+		display: none;
 	}
 }
 

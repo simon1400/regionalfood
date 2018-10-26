@@ -1,47 +1,45 @@
-// @import "vars";
-//
-//
-// /*==========  Desktop First  ==========*/
-//
-// // ≥1200px
-// @include media-breakpoint-down(lg) {
-//
-// }
-//
-// // ≥992px
-// @include media-breakpoint-down(md) {
-//
-// }
-//
-// // ≥768px
-// @include media-breakpoint-down(sm) {
-//
-// }
-//
-// // ≥576px
-// @include media-breakpoint-down(xs) {
-//
-// }
-//
-//
-// /*==========  Mobile First  ==========*/
-//
-// // ≤576px
-// @include media-breakpoint-up(sm) {
-//
-// }
-//
-// // ≤768px
-// @include media-breakpoint-up(md) {
-//
-// }
-//
-// // ≤992px
-// @include media-breakpoint-up(lg) {
-//
-// }
-//
-// // ≤1200px
-// @include media-breakpoint-up(xl) {
-//
-// }
+@import "vars";
+
+
+@media (max-width: 1200px) {
+  .slider_info{
+    padding: 60px 60px; 
+  }
+}
+
+@media (max-width: 680px){
+  header .logo img{
+    height: auto;
+    width: 150px;
+    margin-top: 30px;
+  }
+  header .nav-header ul li a{
+    padding: 40px 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .button_menu{
+  	img{
+  		display: inline-block;
+      height: 20px;
+      margin-top: -9px;
+  	}
+    span{
+      display: none;
+    }
+  }
+  .hamburger{
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  header .nav-header ul li a{
+    padding: 20px 10px;
+  }
+  header .logo img{
+    width: 100px;
+    margin-top: 15px;
+  }
+}

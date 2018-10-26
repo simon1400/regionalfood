@@ -22,6 +22,6 @@
     "gulp-util": "^3.0.8"
   },
   "dependencies": {
-    "uikit": "^3.0.0-rc.19"
+    "uikit": "^3.0.0-rc.20"
   }
 }
