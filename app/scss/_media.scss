@@ -3,7 +3,31 @@
 
 @media (max-width: 1200px) {
   .slider_info{
-    padding: 60px 60px; 
+    padding: 60px 60px;
+  }
+  .flex_logo{
+    flex-wrap: wrap;
+    >div{
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 960px){
+  .category_content .card_short{
+    padding: 0;
+  }
+  .sidebar_menu{
+    display: none;
+    padding-left: 20px;
+    margin-top: 30px;
+  }
+  .button_category{
+    .head_dropdown{
+      font-size: 25px;
+      letter-spacing: 2px;
+      margin-left: 15px;
+    }
   }
 }
 
@@ -15,6 +39,18 @@
   }
   header .nav-header ul li a{
     padding: 40px 10px;
+  }
+}
+
+@media (max-width: 640px){
+  .slider_img{
+    height: 400px;
+  }
+  .hardart{
+    text-align: left;
+  }
+  .footer_head{
+    margin-top: 25px;
   }
 }
 
@@ -32,14 +68,33 @@
   .hamburger{
     padding: 0;
   }
-}
-
-@media (max-width: 500px) {
   header .nav-header ul li a{
     padding: 20px 10px;
   }
   header .logo img{
     width: 100px;
+    margin-top: 15px;
+  }
+  .card_short{
+    padding: 0;
+  }
+  .slider_info{
+    padding: 45px 20px;
+  }
+  header .menu_dropdown{
+    top: 65px;
+  }
+  .flex_logo{
+    justify-content: center;
+  }
+  .full_card .order_block .button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 290px;
+  }
+  .full_card .order_block form{
     margin-top: 15px;
   }
 }

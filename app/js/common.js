@@ -18,3 +18,16 @@
         }, false);
       });
     }
+
+
+$(function() {
+
+  $('#header_hamburger').click(function() {
+    $('.menu_dropdown').slideToggle();
+  })
+
+  $('#sidebar_hamburger').click(function() {
+    $('.sidebar_menu').slideToggle();
+  })
+
+})
