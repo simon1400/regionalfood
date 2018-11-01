@@ -81,209 +81,178 @@
 	</header>
 
 
-	<section>
-		<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="center: true">
-
-			<div class="uk-container">
-		    <ul class="uk-slider-items uk-grid uk-child-width-1-1" uk-height-match="target: > li > div > div > div; row: false">
-	        <li>
-	          <div class="uk-grid uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse">
-          		<div class="slider_img uk-cover-container">
-          			<img src="/img/slide.jpg" alt="" uk-cover>
-          		</div>
-	          	<div>
-	          		<div class="slider_info green uk-flex">
-									<div class="uk-margin-auto uk-margin-auto-vertical">
-										<h2 class="head">Boženka nadpis</h2>
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-										<button class="button bare">více informací</button>
-									</div>
-	          		</div>
-	          	</div>
-	          </div>
-	        </li>
-	        <li>
-						<div class="uk-grid uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse">
-							<div>
-								<div class="slider_img uk-cover-container">
-									<img src="/img/slide.jpg" alt="" uk-cover>
-								</div>
-							</div>
-							<div>
-								<div class="slider_info pink uk-flex">
-									<div class="uk-margin-auto uk-margin-auto-vertical">
-										<h2 class="head">Boženka nadpis</h2>
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-										<button class="button bare">více informací</button>
-									</div>
-								</div>
-							</div>
-						</div>
-	        </li>
-	        <li>
-						<div class="uk-grid uk-child-width-1-1 uk-child-width-1-2@s uk-grid-collapse">
-							<div>
-								<div class="slider_img uk-cover-container">
-									<img src="/img/slide.jpg" alt="" uk-cover>
-								</div>
-							</div>
-							<div>
-								<div class="slider_info yellow uk-flex">
-									<div class="uk-margin-auto uk-margin-auto-vertical">
-										<h2 class="head">Boženka nadpis</h2>
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-										<button class="button bare">více informací</button>
-									</div>
-								</div>
-							</div>
-						</div>
-	        </li>
-		    </ul>
-			</div>
-
-	    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-	    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-		</div>
-	</section>
-
-
-	<section class="banner uk-margin-medium-top">
+	<section class="category_header">
 		<div class="uk-container">
-			<div class="banner_wrap_container" style="background-image: url('/img/image1.jpg')">
-				<div class="banner_wrap uk-flex uk-flex-center uk-flex-middle">
-					<div class="banner_info">
-						<h2 class="head">zdravě a bez chemie</h2>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.</p>
-						<button class="button bare">registrovat</button>
+			<div class="uk-grid uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@s" uk-grid uk-height-match="target: > div > div">
+				<div>
+					<div class="category_head uk-flex">
+						<h1 class="uk-margin-auto uk-margin-auto-vertical">Produkty přímo od farmáře</h1>
+					</div>
+				</div>
+				<div>
+					<div class="category_image uk-cover-container">
+						<img class="uk-height-1-1" src="/img/category-image.jpg" alt="" uk-cover>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-
-	<section>
+	<section class="category_content">
 		<div class="uk-container">
-			<h2 class="head_level">doporučujeme</h2>
-			<div class="uk-grid uk-child-width-1-2 uk-child-width-1-4@m">
-				<div>
-					<div class="card_short uk-margin-bottom">
-						<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
-						<div class="card_img_wrap">
-							<img src="/img/product1.jpg" alt="">
+			<div class="uk-grid" uk-grid>
+				<div class="uk-width-1-1 uk-width-1-4@m">
+					<div class="button_category uk-hidden@m">
+						<button id="sidebar_hamburger" class="hamburger hamburger--spring" type="button">
+						  <span class="hamburger-box">
+						    <span class="hamburger-inner"></span>
+						  </span>
+						</button>
+						<span class="head_dropdown">Kategorie</span>
+					</div>
+					<nav class="sidebar_menu">
+						<ul>
+							<li>
+								<a href="">Ovoce a zelenina</a>
+								<ul>
+									<li><a href="">Jablka</a></li>
+									<li><a href="">Hrušky</a></li>
+									<li><a href="">Mrkve</a></li>
+									<li><a href="">Jahody</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">Mléčné výrobky</a>
+								<ul>
+									<li><a href="">Mléko</a></li>
+									<li><a href="">Čokoláda</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">Maso</a>
+								<ul>
+									<li><a href="">Hovězí</a></li>
+									<li><a href="">Drůbež</a></li>
+									<li><a href="">Jehněčí</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">Lahůdky</a>
+								<ul>
+									<li><a href="">Pomazánky</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">Nápoje</a>
+								<ul>
+									<li><a href="">Mošty</a></li>
+									<li><a href="">Pivo</a></li>
+									<li><a href="">Víno</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">Výrobci</a>
+								<ul>
+									<li><a href="">Paštika Boženka</a></li>
+									<li><a href="">Lanýže Tereza</a></li>
+									<li><a href="">Farma Pálava</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="uk-width-1-1 uk-width-3-4@m">
+					<div class="uk-grid uk-child-width-1-2 uk-child-width-1-3@m">
+						<div>
+							<div class="card_short uk-margin-bottom">
+								<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
+								<div class="card_img_wrap">
+									<img src="/img/product1.jpg" alt="">
+								</div>
+								<span class="card_category">PAŠTIKA BOŽENKA</span>
+								<h3 class="card_head">Paštika boženka originál</h3>
+								<span class="card_price">159 Kč</span>
+							</div>
 						</div>
-						<span class="card_category">PAŠTIKA BOŽENKA</span>
-						<h3 class="card_head">Paštika boženka originál</h3>
-						<span class="card_price">159 Kč</span>
-					</div>
-				</div>
-				<div>
-					<div class="card_short uk-margin-bottom">
-						<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
-						<div class="card_img_wrap">
-							<img src="/img/product2.jpg" alt="">
+						<div>
+							<div class="card_short uk-margin-bottom">
+								<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
+								<div class="card_img_wrap">
+									<img src="/img/product2.jpg" alt="">
+								</div>
+								<span class="card_category">PAŠTIKA BOŽENKA</span>
+								<h3 class="card_head">Paštika boženka originál</h3>
+								<span class="card_price">159 Kč</span>
+							</div>
 						</div>
-						<span class="card_category">PAŠTIKA BOŽENKA</span>
-						<h3 class="card_head">Paštika boženka originál</h3>
-						<span class="card_price">159 Kč</span>
-					</div>
-				</div>
-				<div>
-					<div class="card_short uk-margin-bottom">
-						<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
-						<div class="card_img_wrap">
-							<img src="/img/product3.jpg" alt="">
+						<div>
+							<div class="card_short uk-margin-bottom">
+								<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
+								<div class="card_img_wrap">
+									<img src="/img/product3.jpg" alt="">
+								</div>
+								<span class="card_category">PAŠTIKA BOŽENKA</span>
+								<h3 class="card_head">Paštika boženka originál</h3>
+								<span class="card_price">159 Kč</span>
+							</div>
 						</div>
-						<span class="card_category">PAŠTIKA BOŽENKA</span>
-						<h3 class="card_head">Paštika boženka originál</h3>
-						<span class="card_price">159 Kč</span>
-					</div>
-				</div>
-				<div>
-					<div class="card_short uk-margin-bottom">
-						<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
-						<div class="card_img_wrap">
-							<img src="/img/product4.jpg" alt="">
+						<div>
+							<div class="card_short uk-margin-bottom">
+								<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
+								<div class="card_img_wrap">
+									<img src="/img/product4.jpg" alt="">
+								</div>
+								<span class="card_category">PAŠTIKA BOŽENKA</span>
+								<h3 class="card_head">Paštika boženka originál</h3>
+								<span class="card_price">159 Kč</span>
+							</div>
 						</div>
-						<span class="card_category">PAŠTIKA BOŽENKA</span>
-						<h3 class="card_head">Paštika boženka originál</h3>
-						<span class="card_price">159 Kč</span>
-					</div>
-				</div>
-				<div>
-					<div class="card_short uk-margin-bottom">
-						<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
-						<div class="card_img_wrap">
-							<img src="/img/product3.jpg" alt="">
+						<div>
+							<div class="card_short uk-margin-bottom">
+								<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
+								<div class="card_img_wrap">
+									<img src="/img/product3.jpg" alt="">
+								</div>
+								<span class="card_category">PAŠTIKA BOŽENKA</span>
+								<h3 class="card_head">Paštika boženka originál</h3>
+								<span class="card_price">159 Kč</span>
+							</div>
 						</div>
-						<span class="card_category">PAŠTIKA BOŽENKA</span>
-						<h3 class="card_head">Paštika boženka originál</h3>
-						<span class="card_price">159 Kč</span>
-					</div>
-				</div>
-				<div>
-					<div class="card_short uk-margin-bottom">
-						<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
-						<div class="card_img_wrap">
-							<img src="/img/product1.jpg" alt="">
+						<div>
+							<div class="card_short uk-margin-bottom">
+								<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
+								<div class="card_img_wrap">
+									<img src="/img/product1.jpg" alt="">
+								</div>
+								<span class="card_category">PAŠTIKA BOŽENKA</span>
+								<h3 class="card_head">Paštika boženka originál</h3>
+								<span class="card_price">159 Kč</span>
+							</div>
 						</div>
-						<span class="card_category">PAŠTIKA BOŽENKA</span>
-						<h3 class="card_head">Paštika boženka originál</h3>
-						<span class="card_price">159 Kč</span>
-					</div>
-				</div>
-				<div>
-					<div class="card_short uk-margin-bottom">
-						<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
-						<div class="card_img_wrap">
-							<img src="/img/product4.jpg" alt="">
+						<div>
+							<div class="card_short uk-margin-bottom">
+								<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
+								<div class="card_img_wrap">
+									<img src="/img/product4.jpg" alt="">
+								</div>
+								<span class="card_category">PAŠTIKA BOŽENKA</span>
+								<h3 class="card_head">Paštika boženka originál</h3>
+								<span class="card_price">159 Kč</span>
+							</div>
 						</div>
-						<span class="card_category">PAŠTIKA BOŽENKA</span>
-						<h3 class="card_head">Paštika boženka originál</h3>
-						<span class="card_price">159 Kč</span>
-					</div>
-				</div>
-				<div>
-					<div class="card_short uk-margin-bottom">
-						<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
-						<div class="card_img_wrap">
-							<img src="/img/product2.jpg" alt="">
+						<div>
+							<div class="card_short uk-margin-bottom">
+								<a href="#" class="add_to_basket">PŘIDAT DO KOŠÍKU</a>
+								<div class="card_img_wrap">
+									<img src="/img/product2.jpg" alt="">
+								</div>
+								<span class="card_category">PAŠTIKA BOŽENKA</span>
+								<h3 class="card_head">Paštika boženka originál</h3>
+								<span class="card_price">159 Kč</span>
+							</div>
 						</div>
-						<span class="card_category">PAŠTIKA BOŽENKA</span>
-						<h3 class="card_head">Paštika boženka originál</h3>
-						<span class="card_price">159 Kč</span>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="banner uk-margin-medium-top">
-		<div class="uk-container">
-			<div class="banner_wrap_container" style="background-image: url('/img/image2.jpg')">
-				<div class="banner_wrap uk-flex uk-flex-center uk-flex-middle">
-					<div class="banner_info">
-						<h2 class="head">Zdravě a bez chemie</h2>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.</p>
-						<button class="button bare">registrovat</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section>
-		<div class="uk-container">
-			<h2 class="head_level">výrobci</h2>
-			<div class="uk-flex flex_logo">
-				<div><img src="/img/brand1.png" alt=""></div>
-				<div><img src="/img/brand2.png" alt=""></div>
-				<div><img src="/img/brand3.png" alt=""></div>
-				<div><img src="/img/brand1.png" alt=""></div>
-				<div><img src="/img/brand2.png" alt=""></div>
-				<div><img src="/img/brand3.png" alt=""></div>
-				<div><img src="/img/brand1.png" alt=""></div>
 			</div>
 		</div>
 	</section>

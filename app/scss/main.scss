@@ -365,6 +365,12 @@ footer{
 		font-size: 13px;
 		letter-spacing: 2px;
 		font-weight: bold;
+		a{
+			color: $accent;
+			&:hover{
+				color: inherit;
+			}
+		}
 	}
 	h1{
 		margin-top: 0;
